@@ -1,0 +1,95 @@
+.App {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.head {
+  background-color: #f8f9fb;
+  height: 10vh;
+}
+
+/* #search{
+  background-color: white;
+  width: 30%;
+  height: 1vh;
+} */
+
+.content {
+  height: 80vh;
+  /* padding: 10px; */
+  width: 100%;
+  background: url('./components/bluebag.jpg') no-repeat center center / cover;
+  z-index: -1;
+  margin-top: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quoteimg{
+  height: 200px;
+  width: 200px;
+}
+
+@font-face {
+  font-family: Satisfy;
+  src: url(../public/Satisfy-Regular.ttf);
+}
+
+.forfont{
+  font-family: 'Satisfy' , cursive;
+  font-size: 400%;
+}
+
+.links{
+  text-decoration: none;
+  font-family: sans-serif;
+  position: relative;
+  color: black;
+}
+/* .links:hover{
+  text-decoration: underline;
+} */
+
+.links::before{
+  content: "";
+  position: absolute;
+  /* display: block; */
+  width: 100%;
+  height: 1.5px;
+  bottom: 19px;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.links:hover::before{
+  transform: scaleX(1);
+}
+
+.docppl{
+  margin-top: 20px;
+  width: 30vw;
+  height: 30vh;
+  height: auto;
+  border-radius: 12px;
+}
+.watch{
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -100px;
+  margin-left: -140px;
+  width: 30vw;
+  height: 30vh;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.Terms {
+  height: 800px;
+  width: 1455px;
+  background-image: linear-gradient(180deg, rgb(75, 117, 243) , rgb(45, 8, 88));
+}
